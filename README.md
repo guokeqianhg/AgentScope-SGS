@@ -49,15 +49,10 @@ Plaintext
 快速开始
 1. 环境准备
 推荐使用 Python 3.9+ 环境。安装必要的依赖：
-
-Bash
-
 pip install agentscope pydantic
 
 3. 配置环境变量
 本项目默认兼容 OpenAI 格式的 API 接口。请在运行前配置你的大模型 API 密钥（默认以阿里云 DashScope 的 Qwen 模型为例，你也可以切换为其他 LLM）：
-
-Bash
 # Linux / macOS
 
 export LLM_API_KEY="your_api_key_here"
@@ -76,7 +71,4 @@ set LLM_BASE_URL="https://dashscope.aliyuncs.com/compatible-mode/v1"
 
 3. 启动游戏
 在终端运行主程序，化身“上帝视角”观看 5 位高智商 Agent 尔虞我诈：
-
-Bash
-
 python sgs_main.py
