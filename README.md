@@ -39,13 +39,21 @@ SanGuoSha-Agent: 基于大模型的多智能体博弈推理系统
 反思闭环：每轮末强制 Agent 触发 ReflectionModel 进行身份确信度推演与策略更新，形成“规则约束执行 + 反思驱动演化”的生命周期闭环。
 
 项目结构
+
 Plaintext
+
   SanGuoSha-Agent
+  
    ├── sgs_main.py      # 主程序入口：Agent 实例化、事件分发、异步时序控制
+   
    ├── sgs_state.py     # 物理引擎：状态机、距离算法、资产清算与胜负校验
+   
    ├── sgs_schemas.py   # 数据契约：基于 Pydantic 的 LLM 结构化输出约束模型
+   
    ├── sgs_config.py    # 牌库配置：标准版 100 张卡牌的 UUID、花色点数与生成逻辑
+   
    └── sgs_prompts.py   # 提示词库：系统 Prompt 与动态人格生成 Prompt
+   
 快速开始
 1. 环境准备
 推荐使用 Python 3.9+ 环境。安装必要的依赖：
