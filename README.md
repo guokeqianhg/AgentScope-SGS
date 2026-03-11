@@ -49,7 +49,9 @@ Plaintext
 快速开始
 1. 环境准备
 推荐使用 Python 3.9+ 环境。安装必要的依赖：
+
 Bash
+
 pip install agentscope pydantic
 
 3. 配置环境变量
@@ -57,17 +59,24 @@ pip install agentscope pydantic
 
 Bash
 # Linux / macOS
+
 export LLM_API_KEY="your_api_key_here"
+
 export LLM_MODEL_ID="qwen-max"
+
 export LLM_BASE_URL="https://dashscope.aliyuncs.com/compatible-mode/v1"
 
 # Windows (Command Prompt)
+
 set LLM_API_KEY="your_api_key_here"
+
 set LLM_MODEL_ID="qwen-max"
+
 set LLM_BASE_URL="https://dashscope.aliyuncs.com/compatible-mode/v1"
 
 3. 启动游戏
 在终端运行主程序，化身“上帝视角”观看 5 位高智商 Agent 尔虞我诈：
 
 Bash
+
 python sgs_main.py
